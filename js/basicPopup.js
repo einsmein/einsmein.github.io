@@ -14,7 +14,15 @@ $(document).ready(function(){
 		$.basicpopup({
 			content: $('#popup-content').html()
 		});
+		console.log($('#popup-content').html())
 		
 	});
+	// $('#btn-open').click(function(){
+	// 	$.getJSON("/html-card.json", function(card){
+	// 		$.basicpopup({
+	// 			content: card
+	// 		})
+	// 	})
+	// })
 
 });
