@@ -19,7 +19,7 @@ $(document).ready(function(){
 	// });
 	$('#btn-open').click(function(){
 		btn = $(this).val()
-		$.getJSON("/html-card.json", function(card){
+		$.getJSON("/data.json", function(card){
 			$.basicpopup({
 				content: card[btn].content,
 				tags: card[btn].tags
