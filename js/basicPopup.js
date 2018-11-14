@@ -9,20 +9,22 @@
 $(document).ready(function(){
 
 		
-	$('#btn-open').click(function(){	
+	// $('#btn-open').click(function(){	
 		
-		$.basicpopup({
-			content: $('#popup-content').html()
-		});
-		console.log($('#popup-content').html())
+	// 	$.basicpopup({
+	// 		content: $('#popup-content').html()
+	// 	});
+	// 	console.log($('#popup-content').html())
 		
-	});
-	// $('#btn-open').click(function(){
-	// 	$.getJSON("/html-card.json", function(card){
-	// 		$.basicpopup({
-	// 			content: card
-	// 		})
-	// 	})
-	// })
+	// });
+	$('#btn-open').click(function(){
+		btn = $(this).val()
+		$.getJSON("/html-card.json", function(card){
+			$.basicpopup({
+				content: card[btn].content,
+				tags: card[btn].tags
+			})
+		})
+	})
 
 });
