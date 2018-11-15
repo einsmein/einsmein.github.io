@@ -31,7 +31,8 @@ $(document).ready(function(){
 	
 	
 	$('.btn-open').click(function(){
-		btn = $(this).val()
+		// btn = $(this).val()
+		btn = this.id
 		$.get("/../data/"+btn+".html", function(htmlContent){
 			console.log(htmlContent)
 			$.basicpopup({
