@@ -33,6 +33,7 @@ $(document).ready(function(){
 	$('#btn-open').click(function(){
 		btn = $(this).val()
 		$.get("/../data/"+btn+".html", function(content){
+			console.log(content)
 			$.basicpopup({
 				htmlContent: content
 			})
