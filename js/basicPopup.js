@@ -30,7 +30,7 @@ $(document).ready(function(){
 // 	})
 	
 	
-	$('#btn-open').click(function(){
+	$('.btn-open').click(function(){
 		btn = $(this).val()
 		$.get("/../data/"+btn+".html", function(htmlContent){
 			console.log(htmlContent)
