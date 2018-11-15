@@ -32,10 +32,10 @@ $(document).ready(function(){
 	
 	$('#btn-open').click(function(){
 		btn = $(this).val()
-		$.get("/../data/"+btn+".html", function(content){
-			console.log(content)
+		$.get("/../data/"+btn+".html", function(htmlContent){
+			console.log(htmlContent)
 			$.basicpopup({
-				htmlContent: content
+				content: htmlContent
 			})
 		})
 	})
