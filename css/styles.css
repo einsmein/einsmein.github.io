@@ -1,3 +1,32 @@
 * {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Hind Vadodara', sans-serif;
+}
+
+
+#header {
+
+}
+
+#nav {
+
+}
+
+#about {
+	background-color: #8E4942;
+}
+
+#skills {
+	background-color: white;
+}
+
+#work-exp {
+	background-color: #BCBCBA;
+}
+
+#education {
+	background-color: white;
+}
+
+#projects {
+	background-color: #8E4942
 }
