@@ -28,13 +28,13 @@
 		}
 	}
 		
-	$.fn.basicpopup.open  = function( content, tags ) {
+	$.fn.basicpopup.open  = function( htmlContent) {
 		var mainClass = '';
 		if ( settings.mainClass ){
 			mainClass = ' ' + settings.mainClass;
 		}
 		var popup_HTML = '<div class="basicpopup-overlay"></div><div class="basicpopup-outer"><div class="basicpopup-inner">';
-		popup_HTML += '<div class="basicpopup-content'+mainClass+'">'+content+'</div></div></div>';
+		popup_HTML += '<div class="basicpopup-content'+mainClass+'">'+htmlContent+'</div></div></div>';
 		$('body').find('.basicpopup-overlay').remove();
 		$('body').find('.basicpopup-outer').remove();
 				
