@@ -17,12 +17,24 @@ $(document).ready(function(){
 	// 	console.log($('#popup-content').html())
 		
 	// });
+	
+	
+// 	$('#btn-open').click(function(){
+// 		btn = $(this).val()
+// 		$.getJSON("/../data/data.json", function(card){
+// 			$.basicpopup({
+// 				content: card[btn].content,
+// 				tags: card[btn].tags
+// 			})
+// 		})
+// 	})
+	
+	
 	$('#btn-open').click(function(){
 		btn = $(this).val()
-		$.getJSON("/../data/data.json", function(card){
+		$.getJSON("/../data/"+btn+".html", function(content){
 			$.basicpopup({
-				content: card[btn].content,
-				tags: card[btn].tags
+				htmlContent: content
 			})
 		})
 	})
