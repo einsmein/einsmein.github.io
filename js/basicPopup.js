@@ -32,7 +32,7 @@ $(document).ready(function(){
 	
 	$('#btn-open').click(function(){
 		btn = $(this).val()
-		$.getJSON("/../data/"+btn+".html", function(content){
+		$.get("/../data/"+btn+".html", function(content){
 			$.basicpopup({
 				htmlContent: content
 			})
