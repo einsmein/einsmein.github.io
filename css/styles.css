@@ -74,6 +74,10 @@ div {
 	letter-spacing: 0.5px;
 	margin: 5 0 5 0px;
 }
+p.entry-header {
+	margin: 0;
+	margin-bottom: 10px;
+}
 
 .entry-sub-header {
 	font-size: 14px;
@@ -167,14 +171,15 @@ img.icon {
 	margin-bottom: 0;
 	display: inline-block;
 }
-.entry-tags button{
+.entry-tags button {
 	font-size: 12px;
-	display:block;
-	padding: 5 10 5 10px;
-	margin: 3 1 3 1px;
-	background-color: #DEDEDC;
-	border:none;
+	display: block;
+	padding: 3px 10px;
+	margin: 5px 1px;
+	border: none;
 	border-radius: 10px;
+	background-color: #1E4673;
+	color: white;
 }
 
 
