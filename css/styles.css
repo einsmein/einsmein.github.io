@@ -34,7 +34,8 @@ a.dark-bg:hover {
 }
 
 b {
-	letter-spacing: 2px;
+	font-weight: 500;
+	letter-spacing: 1px;
 }
 
 #header {
@@ -90,24 +91,6 @@ nav p {
 	padding-bottom: 20px;
 }
 
-.entry-header {
-	font-size: 18px;
-	font-weight: bold;
-	letter-spacing: 0.5px;
-	margin: 5 0 5 0px;
-}
-p.entry-header {
-	margin: 0;
-	margin-bottom: 10px;
-}
-
-.entry-sub-header {
-	font-size: 14px;
-	font-style: italic;
-	letter-spacing: 0.5px;
-	margin-top: 10px;
-}
-
 img.contact-icon {
 	width: 32px;
 	margin: 1px;
@@ -131,18 +114,23 @@ img.icon {
 	color: white;
 	display: flex;
 	text-align: center;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	line-height: 20px;
 }
 .wrap {
 	width: 100%;
 	margin: auto;
+	margin-bottom: 0;
 }
 #about div.col {
 	display: inline-block;
-	margin: 0 0 40px 12%;
+	margin: 0 5% 0 5%;
 	text-align: left;
 }
 #about div.row {
-	width: 35%;
+	width: 30%;
 	display: inline-block;
 	text-align: left;
 }
@@ -150,11 +138,14 @@ img.icon {
 	padding-left: 0;
 }
 #about li {
-	font-size: 13.5px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 	height: 27px;
 	list-style: none;
 	list-style-type: none;
+}
+#about br {
+	line-height: 26px;
 }
 
 #work-exp {
@@ -179,6 +170,25 @@ img.icon {
 	margin-top: 50px;
 	display: flex;
 }
+
+.entry-header {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	margin: 5 0 5 0px;
+}
+p.entry-header {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.entry-sub-header {
+	font-size: 14px;
+	font-style: italic;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+}
+
 .entry-content {
 	width: 70%;
 	margin: 0 20px 0 5px;
@@ -201,8 +211,11 @@ button {
 }
 
 
+.card-wrap {
+	/*display: flex;*/
+}
 .card {
-	width: 35%;
+	width: 30%;
 	height: 400px;
 	margin: 3%;
 	padding: 20px;
