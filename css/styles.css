@@ -2,7 +2,7 @@
 	font-family: 'Hind Vadodara', sans-serif;
 }
 
-body {
+/* body {
 	margin: 0;
 	font-size: 16px;
 	font-family: 'Hind Vadodara', sans-serif;
@@ -10,7 +10,7 @@ body {
 	color: #333333;
 	background-color: #ffffff;
 	-webkit-font-smoothing: antialiased;
-}
+} */
 
 
 .section {
@@ -90,22 +90,7 @@ img.icon {
 	letter-spacing: 2px;
 }
 
-/*#skills-work {
-	background-color: #CDCDCB;
-	text-align: center;
-	display: flex;
-}
-
-#skills {
-	width: 20%;
-	height: ;
-	display: inline-block;
-	text-align: left;
-}*/
-
 #work-exp {
-	/*width: 70%;*/
-	/*display: inline-block;*/
 	background-color: white;
 }
 
