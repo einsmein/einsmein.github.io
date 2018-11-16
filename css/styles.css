@@ -12,14 +12,22 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+div {
+	margin: 0px;
+	border: 0px;
+}
+
 #header {
-	height: 58px;	
+	height: 110px;
 	font-size: 15px;
 	text-align: center;
-	padding: 1px;
 	background-color: #1E4673;
 	color: white;
 	letter-spacing: 2px;
+}
+#header p {
+	margin: 0px;
+	padding: 50px;
 }
 
 /* Navigation Settings */
@@ -42,19 +50,15 @@ nav p {
 	display: inline-block;
 	padding: 0px 10px;
 }
-nav a {
+a {
+	font-weight: bold;
 	text-decoration: none;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	color: white;
 	font-size:12px;
 }
 nav a:hover {
 	color: #333333;
-}
-
-div {
-	margin: 0px;
-	border: 0px;
 }
 
 .section {
@@ -173,9 +177,8 @@ img.icon {
 }
 .entry-tags button {
 	font-size: 12px;
-	display: block;
 	padding: 3px 10px;
-	margin: 5px 1px;
+	margin: 2px 1px;
 	border: none;
 	border-radius: 10px;
 	background-color: #1E4673;
