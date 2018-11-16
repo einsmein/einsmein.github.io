@@ -163,18 +163,15 @@ img.icon {
 }
 .entry-content {
 	width: 70%;
-	margin: 0px 5px;
+	margin: 0 20px 0 5px;
 	display: inline-block;
 /*	margin: auto;
 	margin-right:10%;*/
 }
 .entry-tags {
-	/*width: 25%;*/
-	margin-left: 5%;
-	margin-top: 0;
-	margin-bottom: 0;
-	display: inline-block;
+	width: 25%;
 }
+
 .entry-tags button {
 	font-size: 12px;
 	padding: 3px 10px;
