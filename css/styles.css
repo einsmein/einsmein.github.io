@@ -13,7 +13,7 @@ body {
 }
 
 /* Navigation Settings */
-nav.fixed {
+.fixed {
 	position: fixed;
 	top: 0;
 	height: 70px;
