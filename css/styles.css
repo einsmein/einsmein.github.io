@@ -126,11 +126,12 @@ img.icon {
 }
 #about div.col {
 	display: inline-block;
-	margin: 0 5% 0 5%;
+	margin: 0 0 0 10%;
 	text-align: left;
 }
 #about div.row {
-	width: 30%;
+	min-width: 250px;
+	width: 40%;
 	display: inline-block;
 	text-align: left;
 }
