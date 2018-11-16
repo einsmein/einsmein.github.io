@@ -8,25 +8,21 @@
  */
 $(document).ready(function() {
 
-	$('#runtime').on('scroll', function() {
-		var navHeight = $( window ).height() - 70;
-		if ($(window).scrollTop() > navHeight) {
-			$('.nav').addClass('fixed');
-		}
-		else {
-			$('.nav').removeClass('fixed');
-		}
-	});
-		
-	// $('#btn-open').click(function(){	
-		
-	// 	$.basicpopup({
-	// 		content: $('#popup-content').html()
-	// 	});
-	// 	console.log($('#popup-content').html())
-		
-	// });
-	
+        console.log('ready');
+        $(window).scroll( function ()
+        {
+            alert('scroll');
+        });
+
+// 	$('#runtime').on('scroll', function() {
+// 		var navHeight = $( window ).height() - 70;
+// 		if ($(window).scrollTop() > navHeight) {
+// 			$('.nav').addClass('fixed');
+// 		}
+// 		else {
+// 			$('.nav').removeClass('fixed');
+// 		}
+// 	});
 	
 // 	$('#btn-open').click(function(){
 // 		btn = $(this).val()
