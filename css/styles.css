@@ -38,10 +38,8 @@ nav {
 	display: flex;
 	text-align: center;
 }
-nav ul {
+nav p {
 	margin: auto;
-}
-nav li {
 	display: inline-block;
 	padding: 0px 10px;
 }
