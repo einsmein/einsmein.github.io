@@ -163,14 +163,14 @@ img.icon {
 }
 .entry-content {
 	width: 70%;
-	margin: auto;
+	margin: 0px 5px;
 	display: inline-block;
 /*	margin: auto;
 	margin-right:10%;*/
 }
 .entry-tags {
-	width: 25%;
-	margin-left: 0;
+	/*width: 25%;*/
+	margin-left: 5%;
 	margin-top: 0;
 	margin-bottom: 0;
 	display: inline-block;
