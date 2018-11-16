@@ -12,6 +12,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+#header {
+	height: 60px;	
+	font-size: 14px;
+        vertical-align: middle;
+}
+
 /* Navigation Settings */
 nav.fixed {
 	position: fixed;
@@ -35,6 +41,9 @@ nav ul {
 nav li {
 	display: inline-block;
 	padding: 0px 10px;
+}
+
+nav a {
 	color: #757575;
 }
 
@@ -80,17 +89,6 @@ img.icon {
   -webkit-filter: grayscale(100%);   For Webkit browsers 
   filter: gray;  /* For IE 6 - 9 */
   /*-webkit-transition: all .4s ease;*/
-}
-
-
-#header {
-	height: 60px;	
-	font-size: 14px;
-	padding: 20px;
-}
-
-#nav {
-
 }
 
 #about {
