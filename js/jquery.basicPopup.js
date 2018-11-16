@@ -23,19 +23,17 @@
 			load_content(settings.url, $.basicpopup.open );
 		}else if( settings.content != '' ){
 			$.basicpopup.open( settings.content );
-			console.log(settings.content);
 		}else{
 			$.basicpopup.open( "Missing content" );
 		}
 	}
 		
-	$.fn.basicpopup.open  = function(content) {
+	$.fn.basicpopup.open  = function( content ) {	
 		var mainClass = '';
 		if ( settings.mainClass ){
 			mainClass = ' ' + settings.mainClass;
 		}
-		var popup_HTML = '<div class="basicpopup-overlay"></div><div class="basicpopup-outer"><div class="basicpopup-inner">';
-		popup_HTML += '<div class="basicpopup-content'+mainClass+'">'+content+'</div></div></div>';
+		var popup_HTML = '<div class="basicpopup-overlay"></div><div class="basicpopup-outer"><div class="basicpopup-inner"><div class="basicpopup-content'+mainClass+'">'+content+'</div></div></div>';
 		$('body').find('.basicpopup-overlay').remove();
 		$('body').find('.basicpopup-outer').remove();
 				
