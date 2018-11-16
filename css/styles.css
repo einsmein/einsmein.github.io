@@ -119,14 +119,14 @@ img.icon {
 	letter-spacing: 0.5px;
 	height: 30px;
 }
-#about a {
+a {
 	font-size:13.5px;
 	text-decoration: none;
 	/*font-weight: bold;*/
 	color: #E98547;
 	letter-spacing: 1px;
 }
-#about a:hover {
+a:hover {
 	font-size: 12px;
 	font-weight: bold;
 	color: white;
