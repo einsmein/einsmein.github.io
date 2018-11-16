@@ -16,7 +16,7 @@ body {
 nav.fixed {
 	position: fixed;
 	top: 0;
-	height: 70px;
+/* 	height: 70px; */
 	z-index: 1;
 }
 
