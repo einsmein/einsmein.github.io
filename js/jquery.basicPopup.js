@@ -23,6 +23,7 @@
 			load_content(settings.url, $.basicpopup.open );
 		}else if( settings.content != '' ){
 			$.basicpopup.open( settings.content );
+			console.log(settings.content);
 		}else{
 			$.basicpopup.open( "Missing content" );
 		}

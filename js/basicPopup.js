@@ -34,7 +34,6 @@ $(document).ready(function() {
 		// btn = $(this).val()
 		btn = this.id
 		$.get("/../data/"+btn+".html", function(htmlContent){
-			console.log(htmlContent)
 			$.basicpopup({
 				content: htmlContent
 			})
