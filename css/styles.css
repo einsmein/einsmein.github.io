@@ -14,11 +14,12 @@ body {
 
 #header {
 	height: 48px;	
-	font-size: 14px;
+	font-size: 15px;
 	text-align: center;
 	padding: 1px;
 	background-color: #1E4673;
-	color: #fff;
+	color: white;
+	letter-spacing: 2px;
 }
 
 /* Navigation Settings */
@@ -40,18 +41,16 @@ nav {
 nav ul {
 	margin: auto;
 }
-
 nav li {
 	display: inline-block;
 	padding: 0px 10px;
 }
-
 nav a {
 	text-decoration: none;
 	letter-spacing: 1px;
 	color: white;
+	font-size:13.5px;
 }
-
 nav a:hover {
 	font-size: 12px;
 	font-weight: bold;
@@ -177,6 +176,7 @@ img.icon {
 	background-color: #DEDEDC;
 	border:none;
 	border-radius: 10px;
+	display:block;
 }
 
 
