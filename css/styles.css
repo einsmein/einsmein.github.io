@@ -38,6 +38,10 @@ body {
 	margin-top: 10px;
 }
 
+img.contact-icon {
+	width: 30px;
+}
+
 img.icon {
   width: 65px;
   float: left;
@@ -64,6 +68,13 @@ img.icon {
 #about {
 	background-color: #1E4673;
 	color: white;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+#about li {
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	height: 30px;
 }
 #about a {
 	font-size:13.5px;
@@ -98,10 +109,27 @@ img.icon {
 	background-color: white;
 }
 
-.entry-wrap {
-	width: 90%;
+#education {
+	background-color: #DEDEDC;
+}
+
+#projects {
+	background-color: #E98547;
+	color: white;
+	text-align: center;
+}
+
+.wrap {
+	width: 70%;
 	margin: auto;
-	margin-right:1%;
+	margin-right: 10%;
+	margin-top: 50px;
+}
+
+.entry-wrap {
+	width: 70%;
+	margin: auto;
+	margin-right: 10%;
 	margin-top: 50px;
 	display: flex;
 }
@@ -113,8 +141,8 @@ img.icon {
 	margin-right:10%;*/
 }
 .entry-tags {
-	width: 25%;
-	margin: auto;
+	width: 20%;
+	margin-left: 0;
 	margin-top: 0;
 	margin-bottom: 0;
 	display: inline-block;
@@ -129,16 +157,6 @@ img.icon {
 }
 
 
-
-#education {
-	background-color: #DEDEDC;
-}
-
-#projects {
-	background-color: #E98547;
-	color: white;
-	text-align: center;
-}
 .card {
 	width: 35%;
 	height: 400px;

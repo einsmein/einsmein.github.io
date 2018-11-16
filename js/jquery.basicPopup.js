@@ -18,7 +18,7 @@
 	}
 
 	$.fn.basicpopup  = function(options) {
-		settings = $.extend(settings, options );
+		settings = $.extend(settings, options);
 		if( settings.url != '' ){
 			load_content(settings.url, $.basicpopup.open );
 		}else if( settings.content != '' ){
@@ -28,13 +28,13 @@
 		}
 	}
 		
-	$.fn.basicpopup.open  = function( htmlContent) {
+	$.fn.basicpopup.open  = function(content) {
 		var mainClass = '';
 		if ( settings.mainClass ){
 			mainClass = ' ' + settings.mainClass;
 		}
 		var popup_HTML = '<div class="basicpopup-overlay"></div><div class="basicpopup-outer"><div class="basicpopup-inner">';
-		popup_HTML += '<div class="basicpopup-content'+mainClass+'">'+htmlContent+'</div></div></div>';
+		popup_HTML += '<div class="basicpopup-content'+mainClass+'">'+content+'</div></div></div>';
 		$('body').find('.basicpopup-overlay').remove();
 		$('body').find('.basicpopup-outer').remove();
 				
