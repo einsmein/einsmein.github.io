@@ -26,7 +26,6 @@ body {
 nav.fixed {
 	position: fixed;
 	top: 0;
-/* 	height: 70px; */
 	z-index: 1;
 }
 
@@ -36,8 +35,7 @@ nav {
 	height: 50px;
 	background-color: #1E4673;
 	display: flex;
-	text-align: center;
-	padding: 0px 20% 0px 20%;
+	text-align: center
 }
 nav p {
 	margin: auto;
@@ -54,6 +52,9 @@ nav a:hover {
 	color: #333333;
 }
 
+div {
+	margin: 1px;
+}
 
 .section {
 	padding: 60px;
