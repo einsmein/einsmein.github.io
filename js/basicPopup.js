@@ -11,11 +11,14 @@ $(document).ready(function() {
         $(window).scroll( function ()
         {
 		var navHeight = $( window ).height() - 70;
+		console.log(navHeight);
 		if ($(window).scrollTop() > navHeight) {
 			$('.nav').addClass('fixed');
+			console.log("fixed added");
 		}
 		else {
 			$('.nav').removeClass('fixed');
+			console.log("fixed removed");
 		}
         });
 
