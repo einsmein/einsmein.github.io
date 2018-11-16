@@ -172,7 +172,7 @@ a:hover {
 	width: 25%;
 }
 
-.entry-tags button {
+tag {
 	font-size: 12px;
 	padding: 3px 10px;
 	margin: 2px 1px;
@@ -191,4 +191,8 @@ a:hover {
 	display: inline-block;
 	background-color: white;
 	color: #333333;
+}
+
+.card-tags {
+	margin: 5px 0px;
 }
