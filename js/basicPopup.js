@@ -12,6 +12,7 @@ $(document).ready(function() {
         {
 		var navHeight = $( window ).height() - 70;
 		console.log(navHeight);
+		console.log($(window).scrollTop());
 		if ($(window).scrollTop() > navHeight) {
 			$('.nav').addClass('fixed');
 			console.log("fixed added");
