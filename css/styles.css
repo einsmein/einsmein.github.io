@@ -33,6 +33,10 @@ a.dark-bg:hover {
 	color: #E98547;
 }
 
+b {
+	letter-spacing: 2px;
+}
+
 #header {
 	height: 20px;
 	padding: 60px 0 20px 0;
@@ -125,16 +129,30 @@ img.icon {
 #about {
 	background-color: #1E4673;
 	color: white;
-	letter-spacing: 1px;
 	display: flex;
+	text-align: center;
 }
-#about div{
-	margin-right: 5%;
+.wrap {
+	width: 100%;
+	margin: auto;
+}
+#about div.col {
+	display: inline-block;
+	margin: 0 0 40px 12%;
+	text-align: left;
+}
+#about div.row {
+	width: 35%;
+	display: inline-block;
+	text-align: left;
+}
+#about ul {
+	padding-left: 0;
 }
 #about li {
-	font-size: 14px;
+	font-size: 13.5px;
 	letter-spacing: 0.5px;
-	height: 30px;
+	height: 27px;
 	list-style: none;
 	list-style-type: none;
 }
@@ -153,12 +171,6 @@ img.icon {
 	text-align: center;
 }
 
-.wrap {
-	width: 70%;
-	margin: auto;
-	margin-right: 10%;
-	margin-top: 50px;
-}
 
 .entry-wrap {
 	width: 70%;
