@@ -7,11 +7,16 @@
  * Copyright 2015. ISC licensed.
  */
 $(document).ready(function() {
-
-        console.log('ready');
+	
         $(window).scroll( function ()
         {
-            alert('scroll');
+		var navHeight = $( window ).height() - 70;
+		if ($(window).scrollTop() > navHeight) {
+			$('.nav').addClass('fixed');
+		}
+		else {
+			$('.nav').removeClass('fixed');
+		}
         });
 
 // 	$('#runtime').on('scroll', function() {
