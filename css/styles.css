@@ -69,6 +69,7 @@ nav {
 	background-color: #1E4673;
 	text-align: center;
 }
+
 #nav-wrap {
 	width: 450px;
 	margin: auto;
@@ -109,32 +110,65 @@ img.icon {
   opacity: 0.9;
 }
 
+#about-bg
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0px; 
+	padding: 0px; 
+	border: none;
+	z-index: -99999;
+}
+
+#about-wrap {
+	position: relative;
+	z-index: 0;		
+}
+
+#about-overlay {
+	position: absolute;
+	width: 100%;
+	background-color: black;
+	opacity: .7;
+}
+
 #about {
-	background-color: #1E4673;
+	position: absolute;
+	z-index: 20;
+	background-color: transparent;
 	color: white;
-	display: flex;
-	text-align: center;
+	display: inline-block;
+
 	font-weight: 300;
 	letter-spacing: 0.5px;
 	font-size: 14px;
 	line-height: 20px;
+	text-align: center;
+}
+
+#about:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 .wrap {
-	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 300px;
 	margin: auto;
-	margin-bottom: 0;
 }
+
 #about div.col {
 	display: inline-block;
+	vertical-align: top;
+	height: auto;
 	margin: 0 0 0 10%;
+	padding-top: 0;
 	text-align: left;
 }
-#about div.row {
-	min-width: 250px;
-	width: 40%;
-	display: inline-block;
-	text-align: left;
-}
+
 #about ul {
 	padding-left: 0;
 }

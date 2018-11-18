@@ -1,13 +1,44 @@
 $(document).ready(function() {
-        $(window).scroll( function ()
-        {
-//               var navHeight = $( window ).height() - 70;
-              var navHeight = 110;
-              if ($(window).scrollTop() > navHeight) {
-                $('nav').addClass('fixed');
-              }
-              else {
-                $('nav').removeClass('fixed');
-              }
-        });
+    $(window).scroll( function () {
+        var navHeight = 110;
+        if ($(window).scrollTop() > navHeight) {
+            $('nav').addClass('fixed');
+        }
+        else {
+            $('nav').removeClass('fixed');
+        }
+    });
+
+    function setBackgroundSize() {
+        var bg = $('#about-bg');
+        var wth = 1.5;
+        var h = $(window).height();
+        var w = $(window).width();
+        if (w/h > 1.5) {
+            bg.css('width', w);
+            bg.css('height', 'auto')
+        }
+        else {
+            bg.css('width', 'auto');
+            bg.css('height', h);
+        }
+    }
+
+    function setAboutSize() {
+        var aboutWrap = $('#about-wrap');
+        var aboutOverlay = $('#about-overlay');
+        var about = $('#about');
+        var h = $(window).height();
+        aboutWrap.css('height', h-150);
+        aboutOverlay.css('height', h-150);
+        about.css('height', h-150-120);
+    }
+
+    setAboutSize();
+    setBackgroundSize();
+
+    $(window).resize(function() {
+        setAboutSize();
+        setBackgroundSize();
+    })
 });
