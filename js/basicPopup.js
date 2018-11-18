@@ -8,15 +8,14 @@
  */
 $(document).ready(function() {
 	
-// 	$('#btn-open').click(function(){
-// 		btn = $(this).val()
-// 		$.getJSON("/../data/data.json", function(card){
-// 			$.basicpopup({
-// 				content: card[btn].content,
-// 				tags: card[btn].tags
-// 			})
-// 		})
-// 	})
+	// $('.btn-open').click(function(){
+		// btn = $(this).val()
+		// $.getJSON("/../data/data.json", function(card){
+			// $.basicpopup({
+			// 	content: "test"
+			// })
+		// })
+	// })
 	
 	
 	$('.btn-open').click(function(){
