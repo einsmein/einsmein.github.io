@@ -15,7 +15,7 @@ div {
 
 
 a {
-	font-size:13px;
+	font-size:12px;
 	text-decoration: none;
 	font-style: italic;
 	/*font-weight: bold;*/
@@ -95,7 +95,7 @@ nav p {
 }
 
 img.contact-icon {
-	width: 32px;
+	width: 30px;
 	margin: 1px;
 }
 .contact-icon>p {
@@ -144,7 +144,7 @@ img.icon {
 
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 20px;
 	text-align: center;
 }
@@ -212,15 +212,14 @@ img.icon {
 	font-size: 18px;
 	font-weight: bold;
 	letter-spacing: 0.5px;
-	margin: 5 0 5 0px;
 }
 p.entry-header {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 }
 
 .entry-sub-header {
-	font-size: 14px;
+	font-size: 13px
 	font-style: italic;
 	letter-spacing: 0.5px;
 	margin-top: 10px;
@@ -230,8 +229,6 @@ p.entry-header {
 	width: 70%;
 	margin: 0 20px 0 5px;
 	display: inline-block;
-/*	margin: auto;
-	margin-right:10%;*/
 }
 .entry-tags {
 	width: 25%;
