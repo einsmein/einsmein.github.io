@@ -17,8 +17,7 @@ div {
 a {
 	font-size:12px;
 	text-decoration: none;
-	font-style: italic;
-	/*font-weight: bold;*/
+/* 	font-style: italic; */
 	color: #E98547;
 	letter-spacing: 1px;
 }
@@ -42,7 +41,7 @@ b {
 	height: 20px;
 	padding: 60px 0 20px 0;
 	font-size: 23px;
-	'Montserrat Subrayada', sans-serif !important;
+	font-family: 'Montserrat Subrayada', sans-serif !important;
 	text-align: center;
 	background-color: white;
 	letter-spacing: 1px;
@@ -70,7 +69,7 @@ nav {
 	align-items: center;
 	display: flex;
 	
-	font-style: none;
+	font-weight: 700;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
