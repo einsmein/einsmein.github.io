@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Rubik', sans-serif;
 	line-height: 21px;
 	color: #333333;
@@ -71,7 +71,7 @@ nav {
 }
 
 #nav-wrap {
-	width: 450px;
+	width: 500px;
 	margin: auto;
 }
 nav p {
