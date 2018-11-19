@@ -68,6 +68,8 @@ nav {
 	height: 50px;
 	background-color: #1E4673;
 	text-align: center;
+	align-items: center;
+	display: flex;
 }
 
 #nav-wrap {
