@@ -38,19 +38,16 @@ b {
 
 #header {
 	height: 20px;
-	padding: 60px 0 20px 0;
-	font-size: 23px;
+	padding: 70px 0 10px 0;
+	font-size: 25px;
 	font-family: 'Montserrat Subrayada', sans-serif !important;
 	text-align: center;
 	background-color: #1E4673;
 	color: white;
-	letter-spacing: 1px;
 }
 
 #header p {
 	margin: 0;
-	background-color: white;
-	color: #1E4673;
 }
 
 /* Navigation Settings */
