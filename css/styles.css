@@ -17,7 +17,6 @@ div {
 a {
 	font-size:12px;
 	text-decoration: none;
-/* 	font-style: italic; */
 	color: #E98547;
 	letter-spacing: 1px;
 }
@@ -69,9 +68,6 @@ nav {
 	text-align: center;
 	align-items: center;
 	display: flex;
-	
-	font-weight: 700;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 #nav-wrap {
@@ -90,10 +86,10 @@ nav p {
 }
 
 .section-name {
-	font-size: 14px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
 	text-align: center;
-	letter-spacing: 2px;
-	padding-bottom: 20px;
+	letter-spacing: 1px;
 }
 
 img.contact-icon {
