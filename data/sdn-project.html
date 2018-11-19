@@ -1,20 +1,25 @@
-<img src="../img/img_sdn_project.jpg" style="width:80%">
+<div class="wrap">
+	<div class="col" style="width:40%;">
+		<img style="width:100%; height:auto;" src="../img/img_sdn_project.jpg">
+	</div>
+	<div class="col">
+		<p>
+			Shifting towards programmable network, SDN controller is proposed to be an interface between control plane and data plane. To achieve scalability and reliability, it is necessary to use distributed controllers, equipped with communication mechanism for effective load balancing. In this project, we studied research papers that suggested algorithm for that. We inspected a problem that might occur in one of the algorithm and evaluate it using real traffic data.
+			<br><br>
+			We chose two papers whose common concept was for each controller to retrieve load of itself and other controllers, then make decision whether to migrate some of its load (by migrating a switch it answers to) and to which controller. The difference lies in how it retrieves those loads. One paper suggested “Load Collection” module, where a switch pings other switches for their loads when it is overloaded and needs to migrate. Another used “Load Informing” module, where each regularly informs others of its load. We suspected that in an unfortunate scenario where load fluctuates, a lot of ping messages might be generated and creates large amount of unnecessary traffic. We implemented the mechanisms as controller modules using Floodlight OpenFlow Controller. We then simulated the communication among controllers in this framework with real network traffic, using mininet, to verify whether this fluctuation happens in the real scenario. We found that it does happen, but so rarely that it should not affect network performance.
+		</p>
 
-<p>
-	Shifting towards programmable network, SDN controller is proposed to be an interface between control plane and data plane. To achieve scalability and reliability, it is necessary to use distributed controllers, equipped with communication mechanism for effective load balancing. In this project, we studied research papers that suggested algorithm for that. We inspected a problem that might occur in one of the algorithm and evaluate it using real traffic data.
-	<br><br>
-	We chose two papers whose common concept was for each controller to retrieve load of itself and other controllers, then make decision whether to migrate some of its load (by migrating a switch it answers to) and to which controller. The difference lies in how it retrieves those loads. One paper suggested “Load Collection” module, where a switch pings other switches for their loads when it is overloaded and needs to migrate. Another used “Load Informing” module, where each regularly informs others of its load. We suspected that in an unfortunate scenario where load fluctuates, a lot of ping messages might be generated and creates large amount of unnecessary traffic. We implemented the mechanisms as controller modules using Floodlight OpenFlow Controller. We then simulated the communication among controllers in this framework with real network traffic, using mininet, to verify whether this fluctuation happens in the real scenario. We found that it does happen, but so rarely that it should not affect network performance.
-</p>
+		<div>
+			<p><a target="_blank" href="https://github.com/einsmein/floodlight">SOURCE</a></p>
+			<p><a target="_blank" href="data/sdn-project-report.pdf">FINAL REPORT</a></p>
+		</div>
 
-<div>
-	<p><a target="_blank" href="https://github.com/einsmein/floodlight">SOURCE</a></p>
-	<p><a target="_blank" href="data/sdn-project-report.pdf">FINAL REPORT</a></p>
-</div>
-
-<div class="card-tags">
-	<button>floodlight</button>
-	<button>openflow</button>
-	<button>mininet</button>
-	<button>java</button>
-	<button>python</button>
+		<div class="card-tags">
+			<button>floodlight</button>
+			<button>openflow</button>
+			<button>mininet</button>
+			<button>java</button>
+			<button>python</button>
+		</div>
+	</div>
 </div>
