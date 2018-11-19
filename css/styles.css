@@ -151,14 +151,14 @@ img.icon {
 	vertical-align: middle;
 	height: 100%;
 }
-#about div.wrap {
+div.wrap {
 	display: inline-block;
 	vertical-align: middle;
 	min-width: 300px;
 	margin: auto;
 }
 
-#about div.col {
+div.col {
 	display: inline-block;
 	vertical-align: top;
 	height: auto;
