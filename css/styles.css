@@ -85,6 +85,7 @@ nav p {
 .section-name {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
+	font-size: 10px;
 	text-align: center;
 	letter-spacing: 1px;
 }
