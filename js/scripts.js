@@ -34,11 +34,22 @@ $(document).ready(function() {
         about.css('height', h-150-120);
     }
 
+    function setProjectSize() {
+        var cardHolder = $('#card-holder');
+        var cards = $('.card');
+        var w = $(window).width();
+        var h = $(window).height();
+        cardHolder.css('height', h-50);
+        cards.css('width', w/3-5);
+    }
+
     setAboutSize();
     setBackgroundSize();
+    setProjectSize();
 
     $(window).resize(function() {
         setAboutSize();
         setBackgroundSize();
+        setProjectSize();
     })
 });
