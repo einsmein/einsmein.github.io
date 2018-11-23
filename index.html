@@ -2,7 +2,7 @@
 <head>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Hind+Vadodara|Rubik:300,400,500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat+Subrayada:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat+Subrayada:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/basicPopup.css">
@@ -39,7 +39,7 @@
 					<br>
 				</div>
 			</div>
-			<div class="wrap" style="width: 40%; text-align: left;">
+			<div class="wrap" style="width: 50%; text-align: left;">
 				<div class="col">
 					<a href="https://github.com/einsmein" target="_blank"><img class="contact-icon" src="img/github_logo.png"></a><br>
 					<a href="https://www.linkedin.com/in/jinnapat-indrapiromkul-2652a8110/" target="_blank"><img class="contact-icon" src="img/linkedin_logo.png"></a><br>
@@ -127,44 +127,71 @@
 	</div>
 
 	<div id="projects">
-		<!-- <p class="section-name">PROJECTS</p> -->
-		<!-- <p>THIS PART IS UNDER CONTRUCTION, 60% completed</p> -->
 		<div id="card-holder">
-			<div id="sdn-project" class="btn-open card">
-				<div class="card-bg" style="background-color: #01388B;">
-					<div class="card-content">
-						<p>SDN-Project</p>
-					</div>
-					<div class="card-hover">
-
-					</div>
-				</div>
-			</div>
 			<div id="emptyfridge" class="btn-open card">
 				<div class="card-bg" style="background-color: #01978B;">
-					<div class="card-content">
-						<p>EmptyFridge</p>
-						Extended web service to tackle food waste
+					<div class="card-cover">
+						<div class="card-header">EmptyFridge</div>
+						<p>Extended web service to tackle food waste</p>
 					</div>
 					<div class="card-hover">
 
 					</div>
 				</div>
-			</div>
-			<div id="smartsmor" class="btn-open card">
-				<div class="card-bg" style="background-color: #CD323A">
-					<div class="card-content">
-						Smart Smor<br>
-						Eco-friendly mooring system
+			</div><div id="smartsmor" class="btn-open card">
+				<div class="card-bg" style="background-color: #01388B">
+					<div class="card-cover">
+						<div class="card-header">Smart Smor</div>
+						<p>Eco-friendly mooring system</p>
 					</div>
 					<div class="card-hover">
 
 					</div>
 				</div>
-			</div>
-				
+			</div><div id="sdn-project" class="btn-open card">
+				<div class="card-bg" style="background-color: #FACF33;">
+					<div class="card-cover">
+						<div class="card-header">SDN Project</div>
+					</div>
+					<div class="card-hover">
+
+					</div>
+				</div>
+			</div>				
 		</div>
 	</div>
+
+
+	<div style="background-color: white;">
+		<div class="card-wrap">
+			<div class="card-col image">
+				image
+				<!-- <img style="width:100%; height:auto;"> -->
+			</div>
+			<div class="card-col">
+				<p>
+					We created a prototype of a web service that can be added to online grocery stores. Some platform offers a recipe service where 
+				<p>
+					Household accounts for up to 33% of food waste. To alleviate the problem, we looked at a possiblity that comes with an emerging trend of online grocery stores. Some of the platform, such as kolonial.no, offers a recipe service where users can choose the menu, and the ingredients will be put into cart, using data about recipe and packaging portion. We see that this service can be extended further by using the same information to predict potential waste from a selected set of menus.
+				</p>
+				<p class="card-highlight">
+					We compute waste amount of each ingredient from the recipe and packaging portion. Waste score takes into account waste amount, days till expiration, and waste value which reflects amount of resources used to product the ingredient.
+				</p>
+
+				<div>
+					<a target="_blank" href="https://github.com/einsmein/EmptyFridge">SOURCE</a>
+					<!-- pdf file -->
+				</div>
+				<div class="card-tags">
+					<button>springboot</button>
+					<button>java</button>
+					<button>html</button>
+					<button>css</button>
+					<button>angularjs</button>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="js/scripts.js"></script>
 	<script src="js/jquery.basicPopup.js"></script>

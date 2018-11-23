@@ -39,8 +39,17 @@ $(document).ready(function() {
         var cards = $('.card');
         var w = $(window).width();
         var h = $(window).height();
-        cardHolder.css('height', h-50);
-        cards.css('width', w/3-5);
+        // cardHolder.css('height', h-50);
+        var cardW = Math.floor(w/3)
+        if(cardW > 300){
+          cardHolder.css('height', h-50);
+          cards.css('width', cardW);
+          cards.css('height', '100%')
+        }
+        else{
+          cards.css('width', w);
+          cards.css('height', Math.floor(h/3));
+        }
     }
 
     setAboutSize();
@@ -53,3 +62,4 @@ $(document).ready(function() {
         setProjectSize();
     })
 });
+
