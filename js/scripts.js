@@ -7,7 +7,7 @@ $(document).ready(function() {
         }
         else {
             $('nav').removeClass('fixed');
-            $('#navx').css('visibility', 'hidden');
+            $('#navx').css('visibility', 'none');
         }
     });
 
