@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(window).scroll( function () {
-        var navHeight = 110;
+        var navHeight = 100;
         if ($(window).scrollTop() > navHeight) {
             $('nav').addClass('fixed');
             $('#navx').css('display', 'block');
