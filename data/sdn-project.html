@@ -1,34 +1,33 @@
-<div class="wrap">
-	<div class="col" style="width:40%; margin: 0;">
-		<img style="width:100%; height:auto;" src="../img/img_sdn_project.png">
+<div class="card-wrap">
+	<div class="card-col image">
+		<img style="width:100%; height:auto;" src="../img/img_smartsmor.PNG">
+		<!-- <img style="width:100%; height:auto;"> -->
 	</div>
-	<div class="col">
-		<div class="proj-sum">
+	<div class="card-col">
 			<p>
 				Distributed controller and load balancer are proposed to maximize SDN (Software Defined Network) performance. In this project, we investigated a load balancer of SDN controller proposed by Jinke Yu et al. The paper used load informing strategy for communication among controllers. We suspected that in an unfortunate scenario where load continuously wavers, there could be large amount of unnecessary traffic. To verify whether this fluctuation happens in the real scenario, we implemented the proposed mechanism and simulated the communication among controllers with real traffic. It was found that it does happen, but so rarely that it should not affect network performance.
 			</p>
-			<p>
-				Shifting towards programmable network, SDN controller is proposed to be an interface between control plane and data plane. To achieve scalability and reliability, it is necessary to use distributed controllers, equipped with communication mechanism for effective load balancing. In this project, we studied research papers that suggested algorithm for that. We inspected a problem that might occur in one of the algorithm and evaluate it using real traffic data.
-				<br><br>
-			</p>
+			
+		<div>
+			<a target="_blank" href="http://einsmein.com/2018/06/20/evaluation-of-load-balancing-mechanism-with-load-informing-strategy-for-sdn-controllers">BLOG POST</a>
+			<a target="_blank" href="https://github.com/einsmein/floodlight">SOURCE CODE</a>
+			<a target="_blank" href="data/sdn-project-report.pdf">FINAL REPORT</a>
 		</div>
-		<div class="proj-more">
-			<p>
-				We chose two papers whose common concept was for each controller to retrieve load of itself and other controllers, then make decision whether to migrate some of its load (by migrating a switch it answers to) and to which controller. The difference lies in how it retrieves those loads. One paper suggested “Load Collection” module, where a switch pings other switches for their loads when it is overloaded and needs to migrate. Another used “Load Informing” module, where each regularly informs others of its load. We suspected that in an unfortunate scenario where load fluctuates, a lot of ping messages might be generated and creates large amount of unnecessary traffic. We implemented the mechanisms as controller modules using Floodlight OpenFlow Controller. We then simulated the communication among controllers in this framework with real network traffic, using mininet, to verify whether this fluctuation happens in the real scenario. We found that it does happen, but so rarely that it should not affect network performance.
-			</p>
-		</div>
+		<div class="card-tags">
+			<button>illustrator</button>
+			<button>pitching</button>
+	</div>
+</div>
 
 		<div>
-			<p><a target="_blank" href="https://github.com/einsmein/floodlight">SOURCE</a></p>
-			<p><a target="_blank" href="data/sdn-project-report.pdf">FINAL REPORT</a></p>
-		</div>
+			</div>
 
 		<div class="card-tags">
-			<button>floodlight</button>
-			<button>openflow</button>
+			<button>Floodlight</button>
+			<button>OpenFlow</button>
 			<button>mininet</button>
-			<button>java</button>
-			<button>python</button>
+			<button>Java</button>
+			<button>Python</button>
 		</div>
 	</div>
 </div>
