@@ -44,7 +44,7 @@ $(document).ready(function() {
         // cardHolder.css('height', h-50);
         var cardW = Math.floor((w-1)/3)
         if(cardW > 300){
-          cardHolder.css('height', h-50);
+          cardHolder.css('height', h-50+1);
           cards.css('width', cardW);
           cards.css('height', '100%')
         }
