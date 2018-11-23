@@ -89,7 +89,7 @@ nav p {
 .section-name {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	letter-spacing: 1px;
 }
@@ -145,7 +145,7 @@ img.icon {
 
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 20px;
 	text-align: center;
 }
@@ -176,7 +176,7 @@ div.col {
 	padding-left: 0;
 }
 #about li {
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 0.5px;
 	padding-top: 6px;
 	list-style: none;
