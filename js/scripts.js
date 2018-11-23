@@ -3,9 +3,11 @@ $(document).ready(function() {
         var navHeight = 110;
         if ($(window).scrollTop() > navHeight) {
             $('nav').addClass('fixed');
+            $('#navx').css('visibility', 'visible');
         }
         else {
             $('nav').removeClass('fixed');
+            $('#navx').css('visibility', 'hidden');
         }
     });
 
