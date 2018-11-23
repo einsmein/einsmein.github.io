@@ -3,7 +3,7 @@ $(document).ready(function() {
         var navHeight = 110;
         if ($(window).scrollTop() > navHeight) {
             $('nav').addClass('fixed');
-	    $('body').prepend('<nav id="x"></nav>');
+	    $('body').prepend('<div id="x" style="width: 100%; height: 50px;"></div>');
         }
         else {
             $('nav').removeClass('fixed');
