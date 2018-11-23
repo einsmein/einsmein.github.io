@@ -58,7 +58,7 @@ nav.fixed {
 }
 
 #navx {
-	width:100%; height:50px; visibility:none;
+	width:100%; height:50px; display:none;
 }
 nav {
 	bottom: 0;
