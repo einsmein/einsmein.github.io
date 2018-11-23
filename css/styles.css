@@ -328,13 +328,15 @@ div.card-col {
 	vertical-align: top;
 	height: auto;
 	width: 50%;
-	margin: 4% 10%;
+	margin: 4% 10% 4% 8%;
 	padding-top: 0;
 	text-align: left;
 }
 
 div.card-wrap .image{
 	width:30%;
+	margin-top: 6%;
+	margin-right: 0;
 }
 
 .card-highlight {
