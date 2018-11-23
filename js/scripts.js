@@ -3,11 +3,11 @@ $(document).ready(function() {
         var navHeight = 110;
         if ($(window).scrollTop() > navHeight) {
             $('nav').addClass('fixed');
-		    $('body').prepend('<nav id="nav-placeholder"></nav>');
+	    $('body').prepend('<nav id="x"></nav>');
         }
         else {
             $('nav').removeClass('fixed');
-		    $('#nav-placeholder').remove();
+	    $('#x').remove();
         }
     });
 
