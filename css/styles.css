@@ -135,6 +135,12 @@ img.icon {
 	opacity: .7;
 }
 
+#about:before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
 #about {
 	position: absolute;
 	z-index: 20;
@@ -146,16 +152,9 @@ img.icon {
 
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 21px;
 	text-align: center;
-}
-
-#about:before{
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
 }
 div.wrap {
 	display: inline-block;
@@ -177,14 +176,14 @@ div.col {
 	padding-left: 0;
 }
 #about li {
-	font-size: 14px;
+	font-size: 15px;
 	letter-spacing: 0.5px;
 	padding-top: 6px;
 	list-style: none;
 	list-style-type: none;
 }
 #about br {
-	line-height: 27px;
+	line-height: 28px;
 }	
 
 #work-exp {
@@ -230,7 +229,7 @@ p.entry-header {
 }
 
 button {
-	font-size: 12px;
+	font-size: 13px;
 	padding: 4px 7px 5px 7px;
 	margin: 2px 2px;
 	border: none;
@@ -305,6 +304,7 @@ a:hover button {
 	color: white;
 	font-weight: 300;
 	letter-spacing: 0.5px;
+	line-height:18px;
 	min-width:250px;
 }
 
@@ -313,6 +313,7 @@ a:hover button {
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 20px;
+	line-height:22px;
 	letter-spacing: 0.5px;
 }
 
@@ -355,7 +356,7 @@ div.card-col {
 }
 
 div.card-wrap .image{
-	width:40%;
+	width:35%;
 	/*margin-top: 3%;*/
 	margin-right: 0;
 }
