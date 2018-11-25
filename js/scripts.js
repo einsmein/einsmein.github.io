@@ -39,6 +39,7 @@ $(document).ready(function() {
     function setProjectSize() {
         var cardHolder = $('#card-holder');
         var cards = $('.card');
+        var cardsHo = $('.card-ho');
         var w = $(window).width();
         var h = $(window).height();
         // cardHolder.css('height', h-50);
@@ -46,11 +47,13 @@ $(document).ready(function() {
         if(cardW > 300){
           cardHolder.css('height', h-50+1);
           cards.css('width', cardW);
-          cards.css('height', '100%')
+          cards.css('height', '70%');
+          cardsHo.css('height', '30%');
         }
         else{
           cards.css('width', w);
           cards.css('height', Math.floor(h/3));
+          cardsHo.css('height', Math.floor(h/3));
         }
     }
 

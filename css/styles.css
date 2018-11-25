@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-size: 15px;
+	font-size: 14px;
 	font-family: 'Rubik', sans-serif;
 	line-height: 21px;
 	color: #333333;
@@ -268,6 +268,16 @@ a:hover button {
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+	margin: 0;
+	padding: 0;
+
+	background-color: white;
+	color: #333333;
+}
+
+.card-ho {
+	display: block;
+	position: relative;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -275,6 +285,8 @@ a:hover button {
 	background-color: white;
 	color: #333333;
 }
+
+
 
 .card-bg {
 	position: absolute;
