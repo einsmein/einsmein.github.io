@@ -325,7 +325,10 @@ a:hover button {
 	transition: .4s ease;
 }
 
-.card:hover .card-hover{
+.card:hover, .card-hover{
+	opacity: 1;
+}
+.card-ho:hover, .card-hover{
 	opacity: 1;
 }
 
