@@ -31,9 +31,16 @@ $(document).ready(function() {
         var aboutOverlay = $('#about-overlay');
         var about = $('#about');
         var h = $(window).height();
-        aboutWrap.css('height', h-150);
-        aboutOverlay.css('height', h-150);
-        about.css('height', h-150-120);
+        if (h > 884) {
+          aboutWrap.css('height', h-150);
+          aboutOverlay.css('height', h-150);
+          about.css('height', h-150-120);
+        } else {
+          aboutWrap.css('height', h-150+200);
+          aboutOverlay.css('height', h-150+200);
+          about.css('height', h-150-120+200);
+
+        }
     }
 
     function setProjectSize() {

@@ -135,12 +135,12 @@ img.icon {
 	opacity: .7;
 }
 
-#about:before{
+/*#about:before{
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-}
+}*/
 #about {
 	position: absolute;
 	z-index: 20;
@@ -160,7 +160,7 @@ div.wrap {
 	display: inline-block;
 	vertical-align: middle;
 	min-width: 300px;
-	margin: auto;
+	margin-top: 15%;
 }
 
 div.col {
@@ -234,9 +234,9 @@ button {
 	margin: 2px 2px;
 	border: none;
 	border-radius: 2px;
-	/*background-color: #1E4673;*/
 	background-color: black;
 	color: white;
+	text-align: left;
 }
 
 a button {
