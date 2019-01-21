@@ -28,20 +28,34 @@ $(document).ready(function() {
 
     function setAboutSize() {
         var aboutWrap = $('#about-wrap');
+        var aboutWrapRect = aboutWrap.getBoundingClientRect();
         var aboutOverlay = $('#about-overlay');
         var about = $('#about');
         var h = $(window).height();
         var w = $(window).width();
-        if (w > 884) {
-          aboutWrap.css('height', h-150);
-          aboutOverlay.css('height', h-150);
-          about.css('height', h-150-120);
+        var lastRect = $('#last-about-wrap').getBoundingClientRect();
+        var topSpace = lastRect.top - aboutWrapRect.top;
+        
+        if (h < lastRect.bottom + topSpace) {
+            aboutWrap.css('height', lastRect.bottom + topSpace - 150);
+            aboutOverlay.css('height', lastRect.bottom + topSpace - 150);
+            about.css('height', lastRect.bottom + topSpace - 150 - 120);
         } else {
-          aboutWrap.css('height', h-150+150);
-          aboutOverlay.css('height', h-150+150);
-          about.css('height', h-150-120+150);
-
+            aboutWrap.css('height', h - 150);
+            aboutOverlay.css('height', h - 150);
+            about.css('height', h - 150 - 120);
         }
+        
+//         if (w > 884) {
+//           aboutWrap.css('height', h-150);
+//           aboutOverlay.css('height', h-150);
+//           about.css('height', h-150-120);
+//         } else {
+//           aboutWrap.css('height', h-150+150);
+//           aboutOverlay.css('height', h-150+150);
+//           about.css('height', h-150-120+150);
+
+//         }
     }
 
     function setProjectSize() {
@@ -52,17 +66,17 @@ $(document).ready(function() {
         var h = $(window).height();
         // cardHolder.css('height', h-50);
         var cardW = Math.floor((w-1)/3)
-        if(cardW > 300){
-          cardHolder.css('height', h-50+1);
-          cards.css('width', cardW);
-          cards.css('height', '70%');
-          cardsHo.css('height', '30%');
-        }
-        else{
+//         if(cardW > 300){
+//           cardHolder.css('height', h-50+1);
+//           cards.css('width', cardW);
+//           cards.css('height', '70%');
+//           cardsHo.css('height', '30%');
+//         }
+//         else{
           cards.css('width', w);
-          cards.css('height', Math.floor(h/3));
-          cardsHo.css('height', Math.floor(h/3));
-        }
+          cards.css('height', Math.floor(h/3)+1);
+          cardsHo.css('height', Math.floor(h/3)+1);
+//         }
     }
 
     setAboutSize();
