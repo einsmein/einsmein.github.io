@@ -1,10 +1,6 @@
 body {
 	margin: 0;
-<<<<<<< HEAD
 	font-size: 15px;
-=======
-	font-size: 12px;
->>>>>>> b3e7397d79e7526bf8c1b8c5e46f795859050d19
 	font-family: 'Rubik', sans-serif;
 	line-height: 26px;
 	color: #333333;
@@ -41,7 +37,7 @@ b {
 
 #header {
 	height: 20px;
-	padding: 70px 0 10px 0;
+	padding: 60px 0 30px 0;
 	font-size: 25px;
 	/*font-family: 'Montserrat Subrayada', sans-serif !important;*/
 	font-family: 'Josefin Sans', sans-serif;
@@ -71,13 +67,15 @@ nav.fixed {
 nav {
 	bottom: 0;
 	width: 100%;
-	height: 50px;
+	height: 40px;
 	/*background-color: #1E4673;*/
-	background-color: black;
-	text-align: center;
-	align-items: center;
+	background-color: white;
 	display: flex;
 	min-width:650px;
+
+	color: black !important;
+	text-align: center;
+	align-items: center;
 }
 
 #nav-wrap {
@@ -85,10 +83,12 @@ nav {
 	margin: auto;
 }
 nav p {
+	margin:auto;
 	margin-left: 1%;
 	margin-right: 1%;
 	display: inline-block;
 	padding: 0px 10px;
+
 }
 
 .section {
@@ -158,11 +158,11 @@ img.icon {
 	display: flex;
   	justify-content: center;
 	align-items: center;
-	min-width:650px;
+	min-width: 650px;
 
 	font-weight: 300;
 	letter-spacing: 0.5px;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 23px;
 	text-align: center;
 }

@@ -56,7 +56,7 @@ $(document).ready(function() {
           cards.css('width', w);
           cards.css('height', Math.ceil(h/3));
           cardsHo.css('height', 200);
-        }
+        // }
     }
 
     setAboutSize();
