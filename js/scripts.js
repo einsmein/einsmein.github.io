@@ -28,12 +28,12 @@ $(document).ready(function() {
 
     function setAboutSize() {
         var aboutWrap = $('#about-wrap');
-        var aboutWrapRect = aboutWrap[0].getBoundingClientRect();
+        var aboutWrapRect = $('#about-wrap').get(0).getBoundingClientRect();
         var aboutOverlay = $('#about-overlay');
         var about = $('#about');
         var h = $(window).height();
         var w = $(window).width();
-        var lastRect = $('#last-about-wrap')[0].getBoundingClientRect();
+        var lastRect = $('#last-about-wrap').get(0).getBoundingClientRect();
         var topSpace = lastRect.top - aboutWrapRect.top;
         
         if (h < lastRect.bottom + topSpace) {
