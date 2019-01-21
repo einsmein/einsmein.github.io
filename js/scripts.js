@@ -28,6 +28,7 @@ $(document).ready(function() {
 
     function setAboutSize() {
         var aboutWrap = $('#about-wrap');
+        var aboutWrapRect = $('#about-wrap').get(0).getBoundingClientRect();
         var aboutOverlay = $('#about-overlay');
         var about = $('#about');
         var h = $(window).height();
@@ -45,13 +46,13 @@ $(document).ready(function() {
         var h = $(window).height();
         // cardHolder.css('height', h-50);
         var cardW = Math.floor((w-1)/3)
-        if(cardW > 300){
-          cardHolder.css('height', h-50+1);
-          cards.css('width', cardW);
-          cards.css('height', '70%');
-          cardsHo.css('height', '30%');
-        }
-        else{
+//         if(cardW > 300){
+//           cardHolder.css('height', h-50+1);
+//           cards.css('width', cardW);
+//           cards.css('height', '70%');
+//           cardsHo.css('height', '30%');
+//         }
+//         else{
           cards.css('width', w);
           cards.css('height', Math.ceil(h/3));
           cardsHo.css('height', 200);

@@ -1,6 +1,10 @@
 body {
 	margin: 0;
+<<<<<<< HEAD
 	font-size: 15px;
+=======
+	font-size: 12px;
+>>>>>>> b3e7397d79e7526bf8c1b8c5e46f795859050d19
 	font-family: 'Rubik', sans-serif;
 	line-height: 26px;
 	color: #333333;
